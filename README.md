@@ -1,23 +1,19 @@
-# BnB Accelerator — white-glove funnel
+# BNB Accelerator funnel
 
-A fast, responsive static sales funnel, built with semantic HTML, CSS, and progressive JavaScript. Deploy the repository root to Vercel with the Other framework preset; no build command is required.
+Responsive static HTML, CSS and JavaScript. Deploy the repository root to Vercel using Other; no build command is needed. Run `npm run dev` and `npm run check` locally.
 
-## Run locally
+## Content
 
-`npm run dev` then visit http://localhost:3000. Run `npm run check` for JavaScript syntax validation.
+Original BNB logo and source colors: #295dc5, #173161, #a0c9f6, #edf3fd. Stock interiors and the uncurated asset gallery were removed. The manifest archives original sources; three inspected case studies appear publicly.
 
-## Conversion flow
+All 60 original YouTube assets have verified public metadata, titles, author credits and thumbnails. The library supports search and categories. Public source links remain available.
 
-Landing page → private consultation page → existing BnB Accelerator scheduling page. Campaign UTM parameters, gclid, and fbclid are carried through this flow. No lead data is collected or stored by this remake. The existing booking platform handles scheduling.
+47 original proforma workbooks were readable. 23 compatible property models have reconciled capital and cash-flow figures with source links and projection labels. State filters follow the property address because some source templates retain a different state. Three alternate-layout property sheets remain as source links. Figures are projections, not verified actual results or live availability.
 
-## Content and assets
+## Booking
 
-Source: https://mybnbaccelerator.com/ reviewed October 4, 2026. Existing introduction and client interview videos are preserved. Business metrics are attributed and results are qualified. Unsplash interior photographs are illustrative and are not represented as client properties. YouTube thumbnails identify the original interviews. Google Fonts provides Playfair Display, DM Sans, and Manrope.
+apply.html embeds the original BNB Accelerator Call calendar directly through LeadConnector (ZsaZ20WoBCzlaqpmBxQF). The fallback also opens that widget, avoiding the old funnel. UTM, gclid and fbclid parameters carry through. Scheduling data is handled by the existing provider.
 
 ## Maintenance
 
-Update copy in index.html, booking destination in apply.html, and design tokens in styles.css. Keep program metrics current and review all published copy with the business owner. External fonts, photos, videos, and calendar availability depend on their providers. The original domain has not been repointed by this deployment.
-
-## Preserved source library
-
-resources.html includes all 60 unique YouTube assets discovered in the original funnel (embedded and linked), all 77 unique source images, the original program presentation, proformas, property listings, and AirDNA links. Duplicated placements are consolidated. assets/source-manifest.json records the original asset URLs; assets/videos.json catalogs the videos.
+Update HTML copy, styles.css tokens and asset JSON catalogs. External videos, source sheets, fonts and booking availability depend on their providers. No private Slack content was published. The original domain has not been repointed.

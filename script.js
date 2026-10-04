@@ -36,3 +36,13 @@ if(search && category){
   };
   search.addEventListener('input',filterVideos); category.addEventListener('change',filterVideos);
 }
+const modelSearch = document.querySelector('#model-search');
+const modelState = document.querySelector('#model-state');
+if(modelSearch && modelState){
+ const filterModels = () => { let count=0; const query=modelSearch.value.trim().toLowerCase(); document.querySelectorAll('.model-card').forEach(card=>{const match=(modelState.value==='All states'||card.dataset.state===modelState.value)&&card.dataset.search.includes(query);card.hidden=!match;if(match)count++;}); document.querySelector('#model-count').textContent=`${count} property model${count===1?'':'s'}`;document.querySelector('#no-models').hidden=count!==0;};
+ modelSearch.addEventListener('input',filterModels);modelState.addEventListener('change',filterModels);
+}
+const calendar=document.querySelector('#bnb-calendar');
+if(calendar){const url=new URL(calendar.src);allowed.forEach(key=>{if(campaign.has(key))url.searchParams.set(key,campaign.get(key));});calendar.src=url.href;}
+// Replace a failed thumbnail with an honest text treatment; never leave a broken image icon.
+document.querySelectorAll('.story-media img,.hero-film img').forEach(img=>{const fallback=()=>{img.hidden=true;img.closest('button').classList.add('thumbnail-unavailable');};img.addEventListener('error',fallback);if(img.complete && img.naturalWidth===0)fallback();});
