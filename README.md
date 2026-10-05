@@ -17,3 +17,8 @@ apply.html embeds the original BNB Accelerator Call calendar directly through Le
 ## Maintenance
 
 Update HTML copy, styles.css tokens and asset JSON catalogs. External videos, source sheets, fonts and booking availability depend on their providers. No private Slack content was published. The original domain has not been repointed.
+
+
+## Preview indexing
+
+This deployment has no production domain assigned. HTML and HTTP headers use noindex, follow, and links use the clean URL form. Crawlers remain allowed to see the noindex directive. When this funnel is assigned a production domain, update its canonical origin and indexing policy and publish a production sitemap.
